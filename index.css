@@ -1,0 +1,175 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: 50px 50px auto 60px 60px 50px 60px;
+    grid-template-rows: 40px;
+    grid-template-areas: 
+    "about store . gmail images menu sign-in";
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(56, 55, 55);
+    
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+} 
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+} 
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    font-size: 13px;
+    padding: 5 5px;
+    background-color:  #4285f4;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 80px 250px;
+    grid-template-areas: 
+    ". logoarea ."
+    ". inputfield ."
+    ". flexbook ."
+    ". . ."
+    ;
+}
+
+#google-logo {
+    grid-area: logoarea;
+    align-self: end;
+    justify-self: center;
+}
+#inputfield {
+    grid-area: inputfield;
+    align-self: center;
+    border: 1px solid rgba(143, 139, 139, 0.342);
+    border-radius: 15px;
+    text-indent: 15px;
+}
+
+#inputfield:hover {
+    box-shadow: 1px 1px 5px rgb(151, 150, 150);
+}
+
+#inputfield:focus {
+    box-shadow: 1px 1px 5px rgb(151, 150, 150);
+}
+
+#btn-flexbook {
+    display: flex;
+    grid-area: flexbook;
+    justify-self: center;
+    align-self: center;
+
+}
+
+#search-btn {
+    margin-right: 13px;
+    height: 40px;
+    border-color: white;
+    border-radius: 4px;
+    color: rgb(97, 94, 94);
+    
+}
+#lucky-search-btn {
+    height: 40px;
+    border-color: white;
+    border-radius: 4px;
+    color: rgb(97, 94, 94);
+}
+
+#search-btn:hover {
+    padding: 10px 10px 10px 10px;
+    border-color: black;
+    color: black;
+}
+#lucky-search-btn:hover {
+    padding: 10px 10px 10px 10px;
+    border-color: black;
+    color: black;
+}
+
+
+#footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 90px 80px 150px 1fr 70px 70px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "advt business how . privacy terms settings"; 
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(155, 147, 147, 0.041);
+    
+}
+
+#advertising {
+    grid-area: advt;
+    justify-self: center;
+    align-self: center;
+}
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+#how {
+    grid-area: how;
+    justify-self: center;
+    align-self: center;
+}
+#privacy {
+    grid-area: privacy; 
+    justify-self: center;
+    align-self: center;
+}
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
